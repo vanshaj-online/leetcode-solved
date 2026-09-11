@@ -5,13 +5,13 @@
 var createCounter = function (init) {
     let copy = init;
     let increment = () => {
-        return init += 1
+        return copy += 1
     }
     let decrement = () => {
-        return init -= 1
+        return copy -= 1
     }
     let reset = () => {
-        init = copy
+        copy = init
         return copy;
     }
 
